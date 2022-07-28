@@ -20,12 +20,12 @@ body {
   width: 100vw;
   position: relative;
   display: flex;
+  flex-wrap: row wrap;
 }
 
 .left-container {
   background-image: url('./img/halie-west-25xggax4bSA-unsplash.jpg');
   width: 40%;
-  height: 100%;
   position: relative;
 }
 
@@ -64,9 +64,19 @@ body {
   width: auto;
 }
 
-h1 {
+.header {
   color: white;
   text-align: center;
   font: 5em 'norse-bold';
   margin-left: 20px;
+}
+
+.right-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+  height: 100%;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
