@@ -28,18 +28,61 @@
           Sign up <em>now</em> to get started.
         </h1>
         <h1 class="subintro">You <em>know</em> you want to.</h1>
-        <form>
-          <legend>Let's do this!</legend>
-          <div class="form-row">
-            <div class="cell">
-              <label for="fname">FIRST NAME</label>
-              <input type="text" name="fname" id="fname" maxlength="20" />
+        <form id="signup" action="#" method="get">
+          <div class="form-container">
+            <legend>Let's do this!</legend>
+            <div class="form-row">
+              <div class="cell">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" name="fname" id="fname" maxlength="20" />
+              </div>
+              <div class="cell">
+                <label for="lname">LAST NAME</label>
+                <input type="text" name="lname" id="lname" maxlength="20" />
+              </div>
             </div>
-            <div class="cell">
-              <label for="lname">LAST NAME</label>
-              <input type="text" name="lname" id="lname" maxlength="20" />
+            <div class="form-row">
+              <div class="cell">
+                <label for="usermail">E-MAIL</label>
+                <input type="email" name="usermail" id="usermail" required />
+              </div>
+              <div class="cell">
+                <label for="userphone">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  name="userphone"
+                  id="userphone"
+                  pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="cell">
+                <label for="userpwd">PASSWORD</label>
+                <input
+                  type="password"
+                  name="userpwd"
+                  id="userpwd"
+                  minlength="5"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <div class="cell">
+                <label for="userconfirm">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="userconfirm"
+                  id="userconfirm"
+                  minlength="5"
+                  maxlength="20"
+                  required
+                />
+              </div>
             </div>
           </div>
+          <button type="submit" for="signup">Create Account</button>
         </form>
       </div>
     </div>
